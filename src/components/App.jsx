@@ -1,45 +1,34 @@
 import React from "react";
 import Card from "./Card";
-import Avatar from "./Avatar";
-import contacts from "../contacts";
-
-function createCard(contact) {
-  return (
-    <Card
-      id={contact.id}
-      key={contact.id}
-      name={contact.name}
-      img={contact.imgURL}
-      tel={contact.phone}
-      email={contact.email}
-    />
-  );
-}
-
+import charecters from "../charecters";
 function App() {
   return (
     <div>
-      <h1 className="heading">My Contacts</h1>
-      {contacts.map(createCard)}
-
-      {/* <Card
-        name={contacts[0].name}
-        img={contacts[0].imgURL}
-        tel={contacts[0].phone}
-        email={contacts[0].email}
+      <h1 className="heading">Charecter Names</h1>
+      <Card
+        name={charecters[0].name}
+        detailInfo={charecters[0].detailInfo}
+        // img="https://static.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png/revision/latest/scale-to-width-down/300?cb=20160125175116"
+        img={charecters[0].img}
       />
       <Card
-        name={contacts[1].name}
-        img={contacts[1].imgURL}
-        tel={contacts[1].phone}
-        email={contacts[1].email}
+        name={charecters[1].name}
+        detailInfo={charecters[1].detailInfo}
+        // img="https://static.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png/revision/latest/scale-to-width-down/300?cb=20160125175116"
+        img={charecters[1].img}
       />
       <Card
-        name={contacts[2].name}
-        img={contacts[2].imgURL}
-        tel={contacts[2].phone}
-        email={contacts[2].email}
-      /> */}
+        name={charecters[2].name}
+        detailInfo={charecters[2].detailInfo}
+        // img="https://static.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png/revision/latest/scale-to-width-down/300?cb=20160125175116"
+        img={charecters[2].img}
+      />
+      <Card
+        name={charecters[3].name}
+        detailInfo={charecters[3].detailInfo}
+        // img="https://static.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png/revision/latest/scale-to-width-down/300?cb=20160125175116"
+        img={charecters[3].img}
+      />
     </div>
   );
 }
